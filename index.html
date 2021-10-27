@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>选择器</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+				margin: 300px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<button id="btn" type="button" onclick="testConfirm()"  >点我</button>
+	</body>
+	<script type="text/javascript">
+		function testConfirm(){
+			var flag=confirm("柴孟达是不是世界上最帅的人？");
+			if(flag){
+				alert("你做出了最明智的选择！");
+				window.open("img/晚安.jpeg")
+			}else{
+				testConfirm();
+			}
+		}
+	</script>
+</html>
